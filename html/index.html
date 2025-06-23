@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test2_Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Custom css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-animation" id="loadingAnimation">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #043873;">
+    <div class="container px-4 d-flex justify-content-between align-items-center">
+
+      <!-- LEFT: Logo + Brand -->
+      <div class="d-flex align-items-center">
+        <img src="/images/logo.png" alt="" width="30" height="24" class="me-2">
+        <h4 class="mb-0 text-white">whitespace</h4>
+      </div>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- RIGHT: Links + Buttons -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Products <img src="/images/navarrow1.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solutions <img src="/images/navarrow1.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources <img src="/images/navarrow1.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing <img src="/images/navarrow1.png" alt=""></a>
+          </li>
+        </ul>
+        <div class="d-flex gap-2">
+          <button class="btn px-3" style="background-color: #FFE492;">Login</button>
+          <button class="btn text-white" style="background-color: #4F9CF9;">Try whitespace free <img
+              src="/images/navIcon.png" alt=""></button>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <div class="container-fluid text-white hero-section" style="background-color: #043873;">
+    <div class="container hero">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="/images/Image-container.png" alt="" style="width: 824px;" class="img-fluid scale-in">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3 slide-in-left">Get More Done with whitepace</h1>
+          <p class="lead slide-in-left">Project management software that enables your teams to collaborate, plan, analyze and manage
+            everyday tasks</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 pulse">Primary</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Project managment -->
+  <div class="container-fluid project-section">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3 slide-in-left">
+            <div class="position-relative">
+              Project <br> Management
+              <img src="../images/Element_data_underline.png" alt="" class="underline-image">
+            </div>
+          </h1>
+          <p class="lead" style="font: Inter; font-weight: 400;">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams
+            directly from the app. Take photos with the mobile app and save them to a note.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 glow">Get Started <img src="../images/navIcon.png" alt=""> </button>
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="/images/Image-container2.png" alt="" style="width: 824px;" class="img-fluid slide-in-right">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Work Together Section -->
+  <div class="container-fluid work-together-section">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <img src="/images/Work_Together_Image.png" alt="Work Together" class="img-fluid slide-in-left">
+          <!-- Planet animations will be added via JavaScript -->
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3 slide-in-right">
+            Work
+            <span class="position-relative">
+              together
+              <img src="/images/Element_work_underline.png" alt="" class="underline-image-work">
+            </span>
+          </h2>
+          <p class="lead slide-in-right">With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.</p>
+          <div class="d-grid gap-2 d-md-flex">
+            <button type="button" class="btn btn-primary btn-lg px-4 glow">Try it now <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Extension Section -->
+  <div class="container-fluid extension-section">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3 slide-in-left">
+            Use as an
+            <span class="position-relative">
+              Extension
+              <img src="/images/Element_extension_underline.png" alt="underline" class="underline-image-extension">
+            </span>
+          </h2>
+          <p class="lead slide-in-left">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
+          <div class="d-grid gap-2 d-md-flex">
+            <button type="button" class="btn btn-lg px-4 glow">Let's Go <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="extension-placeholder-image scale-in"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Needs Section -->
+  <div class="container-fluid needs-section">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <div class="needs-placeholder-image scale-in"></div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3 slide-in-right">
+            Customise it to
+            <span class="position-relative">
+              your needs
+              <img src="/images/Element_need_underline.png" alt="underline" class="underline-image-needs">
+            </span>
+          </h2>
+          <p class="lead slide-in-right">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+          <div class="d-grid gap-2 d-md-flex">
+            <button type="button" class="btn btn-lg px-4 glow">Let's Go <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Pricing Section -->
+  <div class="container-fluid pricing-section text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-5 fw-bold lh-1 mb-4 fade-in">
+            Choose your
+            <span class="position-relative">
+              plan
+              <img src="/images/Element_plan_underline.png" alt="underline" class="underline-image-plan">
+            </span>
+          </h2>
+          <p class="lead mb-5 fade-in">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, whitepace has the right plan for you.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-auto">
+          <div class="btn-group plan-toggle" role="group">
+            <input type="radio" class="btn-check" name="plan" id="monthly" autocomplete="off" checked>
+            <label class="btn" for="monthly">Monthly</label>
+            <input type="radio" class="btn-check" name="plan" id="yearly" autocomplete="off">
+            <label class="btn" for="yearly">Yearly</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Free Plan -->
+        <div class="col-lg-4">
+          <div class="pricing-card bounce-in">
+            <h4 class="fw-bold">Free</h4>
+            <h2 class="price my-3">$0</h2>
+            <p class="mb-4">Capture ideas and find them quickly</p>
+            <ul class="list-unstyled">
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Sync unlimited devices</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>10 GB monthly uploads</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>200 MB max. note size</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Customize Home dashboard and access extra widgets</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Connect primary Google Calendar account</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button class="btn btn-outline-primary mt-4 glow">Get Started</button>
+          </div>
+        </div>
+
+        <!-- Personal Plan -->
+        <div class="col-lg-4">
+          <div class="pricing-card personal-plan bounce-in">
+            <h4 class="fw-bold">Personal</h4>
+            <h2 class="price my-3">$11.99</h2>
+            <p class="mb-4">Keep home and family on track</p>
+            <ul class="list-unstyled">
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Sync unlimited devices</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>10 GB monthly uploads</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>200 MB max. note size</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Customize Home dashboard and access extra widgets</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Connect primary Google Calendar account</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button class="btn btn-primary mt-4 glow">Get Started</button>
+          </div>
+        </div>
+
+        <!-- Organization Plan -->
+        <div class="col-lg-4">
+          <div class="pricing-card bounce-in">
+            <h4 class="fw-bold">Organization</h4>
+            <h2 class="price my-3">$49.99</h2>
+            <p class="mb-4">Capture ideas and find them quickly</p>
+            <ul class="list-unstyled">
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Sync unlimited devices</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>10 GB monthly uploads</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>200 MB max. note size</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Customize Home dashboard and access extra widgets</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Connect primary Google Calendar account</li>
+              <li class="stagger-item"><i class="bi bi-check-circle-fill me-2"></i>Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button class="btn btn-outline-primary mt-4 glow">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Everywhere Section -->
+  <div class="container-fluid everywhere-section">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-5 fw-bold lh-1 mb-4 fade-in">
+            Your work,
+            <span class="position-relative">
+              everywhere you are
+              <img src="/images/Element_wherever_underline.png" alt="underline" class="underline-image-everywhere">
+            </span>
+          </h2>
+          <p class="lead mb-5 fade-in">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
+          <button class="btn btn-lg px-5 pulse">Try Taskey <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Data Section -->
+  <div class="container-fluid data-section">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3 slide-in-left">
+            100% your
+            <span class="position-relative">
+              data
+              <img src="/images/Element_data_underline.png" alt="underline" class="underline-image-data">
+            </span>
+          </h2>
+          <p class="lead slide-in-left">The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.</p>
+          <button class="btn btn-lg px-4 glow">Read more <i class="bi bi-arrow-right"></i></button>
+        </div>
+        <div class="col-lg-6">
+          <div class="data-placeholder-image scale-in">
+            <img src="/images/Data_image.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sponsors Section -->
+  <div class="container-fluid sponsors-section text-center">
+    <div class="container">
+      <h2 class="display-5 fw-bold lh-1 mb-5 fade-in">
+        Our
+        <span class="position-relative">
+          sponsors
+          <img src="/images/Element_sponsors_undeline.png" alt="underline" class="underline-image-sponsors">
+        </span>
+      </h2>
+      <div class="d-flex align-items-center justify-content-around flex-wrap">
+        <img src="/images/Apple.png" alt="Apple" class="img-fluid sponsor-logo scale-in">
+        <img src="/images/microsoft 1.png" alt="Microsoft" class="img-fluid sponsor-logo scale-in">
+        <img src="/images/Slack.png" alt="Slack" class="img-fluid sponsor-logo scale-in">
+        <img src="/images/Google.png" alt="Google" class="img-fluid sponsor-logo scale-in">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Favorite Apps Section -->
+  <div class="container-fluid favorite-apps-section">
+    <div class="container">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <img src="/images/Apps_image.png" alt="Favorite Apps" class="img-fluid slide-in-left">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold lh-1 mb-3 slide-in-right">Work with Your Favorite Apps Using whitepace</h2>
+          <p class="lead slide-in-right">whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
+          <button class="btn btn-lg px-4 glow">Read more <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Testimonials Section -->
+  <div class="container-fluid testimonials-section text-center">
+    <div class="container">
+      <h2 class="display-5 fw-bold lh-1 mb-5 fade-in">
+        What Our
+        <span class="position-relative">
+          Clients Says
+          <img src="/images/client_underline.png" alt="underline" class="underline-image-clients">
+        </span>
+      </h2>
+      <div class="row">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4">
+          <div class="testimonial-card bounce-in">
+            <p class="quote-icon"><img src="/images/Quote1.png" alt=""></p>
+            <p class="mb-5">whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+            <hr>
+            <div class="d-flex align-items-center">
+              <img src="/images/Avater1.png" alt="Oberon Shaw" class="client-avatar">
+              <div class="ms-3 text-start">
+                <h5 class="mb-0">Oberon Shaw, MCH</h5>
+                <small>Head of Talent Acquisition, North America</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4">
+          <div class="testimonial-card featured bounce-in">
+            <p class="quote-icon"><img src="/images/Quote2.png" alt=""></p>
+            <p class="mb-5">whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+            <hr>
+            <div class="d-flex align-items-center">
+              <img src="/images/Avater2.png" alt="Oberon Shaw" class="client-avatar">
+              <div class="ms-3 text-start">
+                <h5 class="mb-0">Oberon Shaw, MCH</h5>
+                <small>Head of Talent Acquisition, North America</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4">
+          <div class="testimonial-card featured bounce-in">
+            <p class="quote-icon"><img src="/images/Quote3.png" alt=""></p>
+            <p class="mb-5">whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+            <hr>
+            <div class="d-flex align-items-center">
+              <img src="/images/Avater3.png" alt="Oberon Shaw" class="client-avatar">
+              <div class="ms-3 text-start">
+                <h5 class="mb-0">Oberon Shaw, MCH</h5>
+                <small>Head of Talent Acquisition, North America</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Try Today Section -->
+  <div class="container-fluid try-today-section">
+    <div class="container text-center text-white">
+      <h2 class="display-5 fw-bold lh-1 mb-4 fade-in">Try Whitepace today</h2>
+      <p class="lead mb-4 fade-in">Get started for free.<br>Add your whole team as your needs grow.</p>
+      <button class="btn btn-lg px-5 pulse">Try Taskey free <i class="bi bi-arrow-right"></i></button>
+      <p class="mt-4 mb-3 fade-in">On a big team? Contact sales</p>
+      <div class="d-flex justify-content-center align-items-center gap-4 platform-icons">
+        <a href="#"><img src="/images/apple-black-logo 2.png" alt=""></a>
+        <a href="#"><img src="/images/window.png" alt=""></a>
+        <a href="#"><img src="/images/android-logo 1.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="container-fluid footer">
+    <div class="container">
+      <div class="row">
+        <!-- Column 1: Whitepace -->
+        <div class="col-md-3">
+          <div class="d-flex align-items-center mb-3">
+            <img src="/images/logo.png" alt="logo" width="30" height="24" class="me-2">
+            <h4 class="mb-0 text-white">whitepace</h4>
+          </div>
+          <p>whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
+        </div>
+
+        <!-- Column 2: Product -->
+        <div class="col-md-2">
+          <h5>Product</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customer stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="col-md-2">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guides & tutorials</a></li>
+            <li><a href="#">Help center</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="col-md-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Media kit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Try it Today -->
+        <div class="col-md-3">
+          <h5>Try it Today</h5>
+          <p>Get started for free. Add your whole team as your needs grow.</p>
+          <button class="btn btn-primary glow">Start today <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+      <hr class="mt-5 mb-4">
+      <div class="d-md-flex justify-content-between align-items-center footer-bottom">
+        <div class="footer-bottom-left d-flex align-items-center flex-wrap">
+            <div class="dropdown me-4 mb-2 mb-md-0">
+              <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe me-2"></i> English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+              </ul>
+            </div>
+            <a href="#" class="text-white text-decoration-none me-4 mb-2 mb-md-0">Terms & privacy</a>
+            <a href="#" class="text-white text-decoration-none me-4 mb-2 mb-md-0">Security</a>
+            <a href="#" class="text-white text-decoration-none me-4 mb-2 mb-md-0">Status</a>
+            <span class="text-white mb-2 mb-md-0">©2021 Whitepace LLC.</span>
+        </div>
+        <div class="social-icons text-md-end mt-3 mt-md-0">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript for animations -->
+  <script src="/js/animations.js"></script>
+</body>
+
+</html>
